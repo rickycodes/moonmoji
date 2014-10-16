@@ -1,0 +1,27 @@
+{
+  "name": "moonmoji",
+  "version": "0.0.1",
+  "description": "Return an emoji representing the current moon phase.",
+  "main": "index.js",
+  "dependencies": {
+    "suncalc": "^1.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test()"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rmillr/moonmoji.git"
+  },
+  "keywords": [
+    "moon",
+    "phase"
+  ],
+  "author": "@rmillr",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/rmillr/moonmoji/issues"
+  },
+  "homepage": "https://github.com/rmillr/moonmoji"
+}

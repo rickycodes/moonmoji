@@ -5,11 +5,7 @@ Return an emoji representing the current moon phase.
 Install
 ------------
 ```sh
-# Clone the repo
-$ git clone https://github.com/rmillr/moonmoji.git
-
-# Install dependencies
-$ npm install
+$ npm install --save moonmoji
 ```
 
 Usage

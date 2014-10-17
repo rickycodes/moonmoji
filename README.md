@@ -43,7 +43,7 @@ The main goal of this was to have the emoji display in a shell. This can be acco
 `PS1=$(moonmoji);`
 `export PS1;`
 
-Example:
+Example:  
 ![shell](http://i.imgur.com/NiWPceH.png)
 
 * note: If you have additional information in your `PS1` you'll need to have two spaces after the emoji character.

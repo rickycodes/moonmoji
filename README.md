@@ -38,12 +38,12 @@ $ moonmoji --help
 
 In your bash
 ------------
-The main goal of this was to have the emoji display in a shell. This can be accomplished by adding the script to your `PS1` export in your `.bash_profile` or similar, eg:  
+The main goal of this was to have the emoji display in a shell. This can be accomplished by adding the script to your `PS1` export in your `.bash_profile` or similar, eg:
 
 `PS1=$(moonmoji);`
 `export PS1;`
 
-Example:  
+Example:
 ![shell](http://i.imgur.com/NiWPceH.png)
 
 * note: If you have additional information in your `PS1` you'll need to have two spaces after the emoji character.
@@ -55,7 +55,6 @@ todo
 Thanks
 ------
 
-[@lauradegroot](https://github.com/lauradegroot) for inspiration  
-[@bwinton](https://github.com/bwinton) for pretty much authoring the whole thing  
+[@lauradegroot](https://github.com/lauradegroot) for inspiration
+[@bwinton](https://github.com/bwinton) for pretty much authoring the whole thing
 The whole [meatspace](https://chat.meatspac.es/) community for being awesome.
-

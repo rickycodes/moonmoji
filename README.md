@@ -14,8 +14,11 @@ $ npm install
 
 Usage
 -----
-```sh
-$ node index.js
+```js
+var moonmoji = require('moonmoji')();
+
+console.log(moonmoji);
+// => { emoji: '🌗', name: 'Last Quarter' }
 ```
 
 CLI

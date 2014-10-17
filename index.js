@@ -14,7 +14,9 @@ var phases = [
 ];
 
 function stepPhase(phase, randomVal) {
-  randomVal = randomVal || 0.1;
+  if (randomVal === undefined) {
+    randomVal = 0.1;
+  }
 
   var rv = Math.round(phase * 8) % 8;
 

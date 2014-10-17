@@ -56,6 +56,6 @@ todo
 Thanks
 ------
 
-[@lauradegroot](https://github.com/lauradegroot) for inspiration
-[@bwinton](https://github.com/bwinton) for pretty much authoring the whole thing
+[@lauradegroot](https://github.com/lauradegroot) for inspiration  
+[@bwinton](https://github.com/bwinton) for pretty much authoring the whole thing  
 The whole [meatspace](https://chat.meatspac.es/) community for being awesome.

@@ -48,6 +48,10 @@ Example:
 
 * note: If you have additional information in your `PS1` you'll need to have two spaces after the emoji character.
 
+todo
+----
+- tests
+
 Thanks
 ------
 

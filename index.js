@@ -1,5 +1,4 @@
 var suncalc = require('suncalc');
-var phase = suncalc.getMoonIllumination(new Date()).phase;
 
 var phases = [
   { emoji: '🌑', name: 'New Moon' },
@@ -14,20 +13,28 @@ var phases = [
   { emoji: '🌝', name: 'Full Moon *' }
 ];
 
-stepPhase = function (phase, randomVal) {
-  if (randomVal === undefined) {
-    randomVal = 0.1;
-  }
+function stepPhase(phase, randomVal) {
+  randomVal = randomVal || 0.1;
+
   var rv = Math.round(phase * 8) % 8;
+
   if (Math.random() <= randomVal && rv === 0) {
-    rv = 8;
-  } else if (Math.random() <= randomVal && rv === 4) {
-    rv = 9;
+    return 8;
   }
+
+  if (Math.random() <= randomVal && rv === 4) {
+    return 9;
+  }
+
   return rv;
 }
 
-console.log(phases[stepPhase(phase)].emoji);
+module.exports = function(){
+  var phase = suncalc.getMoonIllumination(new Date()).phase;
+
+  return phases[stepPhase(phase)];
+};
+
 
 function test() {
   for (var i = 1; i <= 31; i++) {

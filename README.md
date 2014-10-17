@@ -8,6 +8,25 @@ Clone the repo
 `npm install`  
 Run it: `node path/to/index.js`
 
+CLI
+---
+```sh
+$ npm install --global moonmoji
+```
+
+```sh
+$ moonmoji --help
+
+  Return an emoji representing the current moon phase.
+
+  Usage
+    moonmoji
+    => `🌗`
+
+    moonmoji -v
+    => `Last Quarter - 🌗`
+```
+
 In your bash
 ------------
 The main goal of this was to have the emoji display in a shell. This can be accomplished by adding the script to your `PS1` export in your `.bash_profile` or similar, eg:  

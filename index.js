@@ -27,7 +27,12 @@ stepPhase = function (phase, randomVal) {
   return rv;
 }
 
-console.log(phases[stepPhase(phase)].emoji);
+module.exports = function(){
+  var phase = suncalc.getMoonIllumination(new Date()).phase;
+
+  return phases[stepPhase(phase)];
+};
+
 
 function test() {
   for (var i = 1; i <= 31; i++) {

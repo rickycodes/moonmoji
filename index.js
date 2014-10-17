@@ -1,5 +1,4 @@
 var suncalc = require('suncalc');
-var phase = suncalc.getMoonIllumination(new Date()).phase;
 
 var phases = [
   { emoji: '🌑', name: 'New Moon' },

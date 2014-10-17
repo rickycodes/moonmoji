@@ -14,16 +14,19 @@ var phases = [
   { emoji: '🌝', name: 'Full Moon *' }
 ];
 
-stepPhase = function (phase, randomVal) {
-  if (randomVal === undefined) {
-    randomVal = 0.1;
-  }
+function stepPhase(phase, randomVal) {
+  randomVal = randomVal || 0.1;
+
   var rv = Math.round(phase * 8) % 8;
+
   if (Math.random() <= randomVal && rv === 0) {
-    rv = 8;
-  } else if (Math.random() <= randomVal && rv === 4) {
-    rv = 9;
+    return 8;
   }
+
+  if (Math.random() <= randomVal && rv === 4) {
+    return 9;
+  }
+
   return rv;
 }
 

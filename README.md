@@ -2,11 +2,21 @@ moonmoji
 ========
 Return an emoji representing the current moon phase.
 
-Installation
+Install
 ------------
-Clone the repo  
-`npm install`  
-Run it: `node path/to/index.js`
+```sh
+# Clone the repo
+$ git clone https://github.com/rmillr/moonmoji.git
+
+# Install dependencies
+$ npm install
+```
+
+Usage
+-----
+```sh
+$ node index.js
+```
 
 CLI
 ---

@@ -20,4 +20,8 @@ if(cli.flags.v || cli.flags.verbose){
   return console.log(moonmoji.name, '-', moonmoji.emoji);
 }
 
+if(cli.flags.t || cli.flags.test){
+  return require('./')(true);
+}
+
 console.log(moonmoji.emoji);

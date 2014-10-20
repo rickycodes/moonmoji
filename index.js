@@ -41,11 +41,9 @@ function stepPhase(phase, randomVal) {
   return rv;
 }
 
-module.exports = function(runTest){
-  if (runTest) {
-    return test();
-  }
-  var phase = suncalc.getMoonIllumination(new Date()).phase;
+module.exports = function(dateObj){
+  dateObj = dateObj || new Date();
+  var phase = suncalc.getMoonIllumination(dateObj).phase;
 
   return phases[stepPhase(phase)];
 };

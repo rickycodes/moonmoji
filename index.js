@@ -28,7 +28,7 @@ function stepPhase(phase, randomVal) {
     if (phase <= 0) {
       break;
     }
-  };
+  }
 
   if (Math.random() <= randomVal && rv === 0) {
     return 8;
@@ -49,11 +49,3 @@ module.exports = function(runTest){
 
   return phases[stepPhase(phase)];
 };
-
-
-function test() {
-  for (var i = 1; i <= 31; i++) {
-    var phase = suncalc.getMoonIllumination(new Date(2014, 9, i)).phase;
-    console.log("2014-09-" + i, phases[stepPhase(phase, 1)]);
-  };
-}

@@ -7,9 +7,11 @@
     "suncalc": "^1.0.0",
     "meow": "^1.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "mocha": "~1.21.5"
+  },
   "scripts": {
-    "test": "test()"
+    "test": "mocha"
   },
   "bin": {
     "moonmoji": "cli.js"

@@ -41,6 +41,15 @@ function stepPhase(phase, randomVal) {
   return rv;
 }
 
+function demo() {
+  for (var i = 1; i < 31; i++) {
+    var date = new Date();
+    date.setDate(date.getDate()+i);
+    var phase = suncalc.getMoonIllumination(date).phase;
+    console.log(date.getDate(), phases[stepPhase(phase, 1)]);
+  };
+}
+
 module.exports = function(dateObj){
   dateObj = dateObj || new Date();
   var phase = suncalc.getMoonIllumination(dateObj).phase;

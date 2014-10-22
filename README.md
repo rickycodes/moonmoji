@@ -1,3 +1,5 @@
+![build](https://api.travis-ci.org/rmillr/moonmoji.svg?branch=master)
+
 moonmoji
 ========
 Return an emoji representing the current moon phase.

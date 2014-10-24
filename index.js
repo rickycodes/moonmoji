@@ -1,7 +1,7 @@
 var suncalc = require('suncalc');
 
 var phases = [
-  { emoji: '🌑', name: 'New Moon', weight: 1 },
+  { emoji: '🌚', name: 'New Moon', weight: 1 },
   { emoji: '🌒', name: 'Waxing Crescent', weight: 6.3825 },
   { emoji: '🌓', name: 'First Quarter', weight: 1 },
   { emoji: '🌔', name: 'Waxing Gibbous', weight: 6.3825 },

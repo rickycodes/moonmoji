@@ -4,11 +4,11 @@
   "description": "Return an emoji representing the current moon phase.",
   "main": "index.js",
   "dependencies": {
-    "suncalc": "^1.0.0",
-    "meow": "^1.0.0"
+    "meow": "^3.6.0",
+    "suncalc": "^1.7.0"
   },
   "devDependencies": {
-    "mocha": "~1.21.5"
+    "mocha": "^2.3.4"
   },
   "scripts": {
     "test": "mocha"
@@ -18,16 +18,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rmillr/moonmoji.git"
+    "url": "https://github.com/rickycodes/moonmoji.git"
   },
   "keywords": [
     "moon",
     "phase"
   ],
-  "author": "@rmillr",
+  "author": "@rickycodes",
   "license": "BSD",
   "bugs": {
-    "url": "https://github.com/rmillr/moonmoji/issues"
+    "url": "https://github.com/rickycodes/moonmoji/issues"
   },
-  "homepage": "https://github.com/rmillr/moonmoji"
+  "homepage": "https://github.com/rickycodes/moonmoji"
 }

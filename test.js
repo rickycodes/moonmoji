@@ -21,6 +21,7 @@ describe('moonmoji', function(){
       assert.equal(moon.name, 'Waxing Crescent');
       assert.equal(moon.emoji, '🌒');
     });
+
     it('should return correct for waxing gibbous', function() {
       // September 7th, 2014
       var moon = moonmoji(new Date(2014, 8, 7));

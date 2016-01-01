@@ -1,6 +1,6 @@
 {
   "name": "moonmoji",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Return an emoji representing the current moon phase.",
   "main": "index.js",
   "dependencies": {
@@ -22,7 +22,9 @@
   },
   "keywords": [
     "moon",
-    "phase"
+    "phase",
+    "emoji",
+    "cli"
   ],
   "author": "@rickycodes",
   "license": "BSD",

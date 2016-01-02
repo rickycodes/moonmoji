@@ -1,4 +1,4 @@
-<img align="right" src="http://i.imgur.com/W1ceIUk.png" alt="moonmoji"/>
+<img src="http://i.imgur.com/60m2rdy.png" alt="moonmoji"/>
 
 moonmoji [![Build Status](https://api.travis-ci.org/rickycodes/moonmoji.svg?branch=master)](https://travis-ci.org/rickycodes/moonmoji/) [![Dependency Status](https://david-dm.org/rickycodes/moonmoji.svg)](https://david-dm.org/rickycodes/moonmoji) [![devDependency Status](https://david-dm.org/rickycodes/moonmoji/dev-status.svg)](https://david-dm.org/rickycodes/moonmoji#info=devDependencies)
 ========

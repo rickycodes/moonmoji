@@ -16,8 +16,22 @@ var cli = meow({
   ].join('\n')
 })
 
-if (cli.flags.v || cli.flags.verbose) {
-  console.log(moonmoji.name, '-', moonmoji.emoji)
+function output () {
+  if (cli.flags.v || cli.flags.verbose) {
+    console.log(moonmoji.name, '-', moonmoji.emoji)
+    return
+  }
+
+  if (cli.flags.d || cli.flags.demo) {
+    for (var i = 1; i < 31; i++) {
+      var date = new Date()
+      date.setDate(date.getDate() + i)
+      console.log(require('./')(date))
+    }
+    return
+  }
+
+  console.log(moonmoji.emoji)
 }
 
-console.log(moonmoji.emoji)
+output()

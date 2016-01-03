@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-'use strict';
+'use strict'
 
-var meow = require('meow');
-var moonmoji = require('./')();
+var meow = require('meow')
+var moonmoji = require('./')()
 
 var cli = meow({
   requireInput: false,
@@ -12,12 +12,12 @@ var cli = meow({
     '  => `🌗`',
     '',
     '  moonmoji -v',
-    '  => `Last Quarter - 🌗`',
+    '  => `Last Quarter - 🌗`'
   ].join('\n')
-});
+})
 
-if(cli.flags.v || cli.flags.verbose){
-  return console.log(moonmoji.name, '-', moonmoji.emoji);
+if (cli.flags.v || cli.flags.verbose) {
+  console.log(moonmoji.name, '-', moonmoji.emoji)
 }
 
-console.log(moonmoji.emoji);
+console.log(moonmoji.emoji)

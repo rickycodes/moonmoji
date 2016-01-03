@@ -1,7 +1,18 @@
-<img src="http://i.imgur.com/60m2rdy.png" alt="moonmoji"/>
+![moonmoji](http://i.imgur.com/BnYRgMF.png)
 
-moonmoji [![Build Status](https://api.travis-ci.org/rickycodes/moonmoji.svg?branch=master)](https://travis-ci.org/rickycodes/moonmoji/) [![Dependency Status](https://david-dm.org/rickycodes/moonmoji.svg)](https://david-dm.org/rickycodes/moonmoji) [![devDependency Status](https://david-dm.org/rickycodes/moonmoji/dev-status.svg)](https://david-dm.org/rickycodes/moonmoji#info=devDependencies) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+moonmoji
 ========
+[![Build Status](https://api.travis-ci.org/rickycodes/moonmoji.svg?branch=master)](https://travis-ci.org/rickycodes/moonmoji/) 
+[![Dependency Status](https://david-dm.org/rickycodes/moonmoji.svg)](https://david-dm.org/rickycodes/moonmoji) 
+[![devDependency Status](https://david-dm.org/rickycodes/moonmoji/dev-status.svg)](https://david-dm.org/rickycodes/moonmoji#info=devDependencies) 
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/) 
+[![npm-version](https://img.shields.io/npm/v/moonmoji.svg?style=flat)](https://www.npmjs.com/package/moonmoji) 
+[![npm-downloads](https://img.shields.io/npm/dm/moonmoji.svg?style=flat)](https://www.npmjs.com/package/moonmoji)
+
+[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+
+---
+
 Return an emoji representing the current moon phase.
 
 Install
@@ -34,8 +45,11 @@ $ moonmoji --help
     moonmoji
     => `🌗`
 
-    moonmoji -v
+    moonmoji --verbose
     => `Last Quarter - 🌗`
+
+    moonmoji --version
+    => `0.1.1`
 ```
 
 In your bash

@@ -3,6 +3,7 @@
 
 var meow = require('meow')
 var moonmoji = require('./')()
+var version = require('./package.json').version
 
 var cli = meow({
   requireInput: false,
@@ -11,12 +12,20 @@ var cli = meow({
     '  moonmoji',
     '  => `🌗`',
     '',
-    '  moonmoji -v',
-    '  => `Last Quarter - 🌗`'
+    '  moonmoji --verbose',
+    '  => `Last Quarter - 🌗`',
+    '',
+    '  moonmoji --version',
+    `  => \`${version}\``
   ].join('\n')
 })
 
 function output () {
+  if (cli.flags.version) {
+    console.log(version)
+    return
+  }
+
   if (cli.flags.v || cli.flags.verbose) {
     console.log(moonmoji.name, '-', moonmoji.emoji)
     return

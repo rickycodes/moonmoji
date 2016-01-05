@@ -16,7 +16,7 @@ var cli = meow({
     '  => `Last Quarter - 🌗`',
     '',
     '  moonmoji --version',
-    `  => \`${version}\``
+    '  => ' + version
   ].join('\n')
 })
 

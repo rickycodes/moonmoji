@@ -1,15 +1,15 @@
 {
   "name": "moonmoji",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Return an emoji representing the current moon phase.",
   "main": "index.js",
   "dependencies": {
-    "meow": "^3.6.0",
+    "meow": "^3.7.0",
     "suncalc": "^1.7.0"
   },
   "devDependencies": {
-    "mocha": "^2.3.4",
-    "standard": "^5.4.1"
+    "mocha": "^2.4.5",
+    "standard": "^6.0.5"
   },
   "scripts": {
     "test": "standard && mocha"

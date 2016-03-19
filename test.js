@@ -6,16 +6,15 @@ var moonmoji = require('./')
 
 describe('moonmoji', function () {
   describe('no date object argument', function () {
-    it('should return the moon for today', function () {
-      var actual = moonmoji()
-      var expected = moonmoji(new Date())
-
+    var actual = moonmoji()
+    var expected = moonmoji(new Date())
+    it(actual.emoji + '  should return the moon for today', function () {
       assert.deepEqual(actual, expected)
     })
   })
 
   describe('date object argument', function () {
-    it('should return correct for waxing crescent', function () {
+    it('🌒  should return correct for waxing crescent', function () {
       // September 1st, 2014
       var moon = moonmoji(new Date(2014, 8, 1))
 
@@ -23,7 +22,7 @@ describe('moonmoji', function () {
       assert.equal(moon.emoji, '🌒')
     })
 
-    it('should return correct for waxing gibbous', function () {
+    it('🌔  should return correct for waxing gibbous', function () {
       // September 7th, 2014
       var moon = moonmoji(new Date(2014, 8, 7))
 
@@ -31,7 +30,7 @@ describe('moonmoji', function () {
       assert.equal(moon.emoji, '🌔')
     })
 
-    it('should return correct for waning crescent', function () {
+    it('🌘  should return correct for waning crescent', function () {
       // September 20th, 2014
       var moon = moonmoji(new Date(2014, 8, 20))
 

@@ -21,11 +21,6 @@ var cli = meow({
 })
 
 function output () {
-  if (cli.flags.version) {
-    console.log(version)
-    return
-  }
-
   if (cli.flags.v || cli.flags.verbose) {
     console.log(moonmoji.name, '-', moonmoji.emoji)
     return

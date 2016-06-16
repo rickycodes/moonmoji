@@ -7,10 +7,7 @@ const cli = meow(require('./help'))
 
 function output () {
   if (cli.flags.v || cli.flags.verbose) {
-    console.log(Object.keys(moonmoji).map(function (k) {
-      const key = k + ': '
-      return k + ': ' + (k === 'emoji') ? key + moonmoji[k] + ' ' : key + moonmoji[k]
-    }).join('\n'))
+    console.log(moonmoji)
     return
   }
 

@@ -46,10 +46,10 @@ $ moonmoji --help
     => 🌗
 
     moonmoji --verbose
-    => emoji: 🌔
-    => code: :waxing_gibbous_moon:
-    => name: Waxing Gibbous
-    => weight: 6.3825
+    => { emoji: '🌔',
+    =>   code: ':waxing_gibbous_moon:',
+    =>   name: 'Waxing Gibbous',
+    =>   weight: 6.3825 }
 
     moonmoji --code
     => :new_moon_with_face:

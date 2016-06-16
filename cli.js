@@ -1,19 +1,25 @@
 #!/usr/bin/env node
 'use strict'
 
-var meow = require('meow')
-var moonmoji = require('./')()
-var version = require('./package.json').version
+const meow = require('meow')
+const moonmoji = require('./')()
+const version = require('./package.json').version
 
-var cli = meow({
+const cli = meow({
   requireInput: false,
   help: [
     'Usage',
     '  moonmoji',
-    '  => `🌗`',
+    '  => 🌗',
     '',
     '  moonmoji --verbose',
-    '  => `Last Quarter - 🌗`',
+    '  => 🌔',
+    '  => :waxing_gibbous_moon:',
+    '  => Waxing Gibbous',
+    '  => 6.3825',
+    '',
+    '  moonmoji --code',
+    '  => :new_moon_with_face:',
     '',
     '  moonmoji --version',
     '  => ' + version
@@ -22,13 +28,20 @@ var cli = meow({
 
 function output () {
   if (cli.flags.v || cli.flags.verbose) {
-    console.log(moonmoji.name, '-', moonmoji.emoji)
+    console.log(Object.keys(moonmoji).map(function (k) {
+      return (k === 'emoji') ? moonmoji[k] + ' ' : moonmoji[k]
+    }).join('\n'))
+    return
+  }
+
+  if (cli.flags.c || cli.flags.code) {
+    console.log(moonmoji.code)
     return
   }
 
   if (cli.flags.d || cli.flags.demo) {
-    for (var i = 1; i < 31; i++) {
-      var date = new Date()
+    for (let i = 1; i < 31; i++) {
+      const date = new Date()
       date.setDate(date.getDate() + i)
       console.log(require('./')(date))
     }

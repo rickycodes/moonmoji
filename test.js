@@ -18,24 +18,27 @@ describe('moonmoji', function () {
       // September 1st, 2014
       var moon = moonmoji(new Date(2014, 8, 1))
 
-      assert.equal(moon.name, 'Waxing Crescent')
-      assert.equal(moon.emoji, '🌒')
+      assert.deepEqual(moon.name, 'Waxing Crescent')
+      assert.deepEqual(moon.code, ':waxing_crescent_moon:')
+      assert.deepEqual(moon.emoji, '🌒')
     })
 
     it('🌔  should return correct for waxing gibbous', function () {
       // September 7th, 2014
       var moon = moonmoji(new Date(2014, 8, 7))
 
-      assert.equal(moon.name, 'Waxing Gibbous')
-      assert.equal(moon.emoji, '🌔')
+      assert.deepEqual(moon.name, 'Waxing Gibbous')
+      assert.deepEqual(moon.code, ':waxing_gibbous_moon:')
+      assert.deepEqual(moon.emoji, '🌔')
     })
 
     it('🌘  should return correct for waning crescent', function () {
       // September 20th, 2014
       var moon = moonmoji(new Date(2014, 8, 20))
 
-      assert.equal(moon.name, 'Waning Crescent')
-      assert.equal(moon.emoji, '🌘')
+      assert.deepEqual(moon.name, 'Waning Crescent')
+      assert.deepEqual(moon.code, ':waning_crescent_moon:')
+      assert.deepEqual(moon.emoji, '🌘')
     })
   })
 })

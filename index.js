@@ -10,11 +10,7 @@ const phases = [
   { emoji: '🌘', code: ':waning_crescent_moon:', name: 'Waning Crescent', weight: 6.3825 }
 ]
 
-function stepPhase (phase, randomVal) {
-  if (randomVal === undefined) {
-    randomVal = 0.1
-  }
-
+function stepPhase (phase) {
   const weight = phases.reduce(function (a, b) {
     return a + b.weight
   }, 0)

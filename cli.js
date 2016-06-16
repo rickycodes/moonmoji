@@ -3,33 +3,13 @@
 
 const meow = require('meow')
 const moonmoji = require('./')()
-const version = require('./package.json').version
-
-const cli = meow({
-  requireInput: false,
-  help: [
-    'Usage',
-    '  moonmoji',
-    '  => 🌗',
-    '',
-    '  moonmoji --verbose',
-    '  => 🌔',
-    '  => :waxing_gibbous_moon:',
-    '  => Waxing Gibbous',
-    '  => 6.3825',
-    '',
-    '  moonmoji --code',
-    '  => :new_moon_with_face:',
-    '',
-    '  moonmoji --version',
-    '  => ' + version
-  ].join('\n')
-})
+const cli = meow(require('./help'))
 
 function output () {
   if (cli.flags.v || cli.flags.verbose) {
     console.log(Object.keys(moonmoji).map(function (k) {
-      return (k === 'emoji') ? moonmoji[k] + ' ' : moonmoji[k]
+      const key = k + ': '
+      return k + ': ' + (k === 'emoji') ? key + moonmoji[k] + ' ' : key + moonmoji[k]
     }).join('\n'))
     return
   }

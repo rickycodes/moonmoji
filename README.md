@@ -43,13 +43,19 @@ $ moonmoji --help
 
   Usage
     moonmoji
-    => `🌗`
+    => 🌗
 
     moonmoji --verbose
-    => `Last Quarter - 🌗`
+    => 🌔
+    => :waxing_gibbous_moon:
+    => Waxing Gibbous
+    => 6.3825
+
+    moonmoji --code
+    => :new_moon_with_face:
 
     moonmoji --version
-    => `0.1.1`
+    => 1.1.2
 ```
 
 In your bash

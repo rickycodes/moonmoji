@@ -27,14 +27,6 @@ function stepPhase (phase, randomVal) {
     }
   }
 
-  if (Math.random() <= randomVal && rv === 0) {
-    return 8
-  }
-
-  if (Math.random() <= randomVal && rv === 4) {
-    return 9
-  }
-
   return rv
 }
 

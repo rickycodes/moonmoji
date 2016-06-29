@@ -2,9 +2,12 @@
 
 moonmoji
 ========
-[![Build Status](https://api.travis-ci.org/rickycodes/moonmoji.svg?branch=master)](https://travis-ci.org/rickycodes/moonmoji/) 
-[![Dependency Status](https://david-dm.org/rickycodes/moonmoji.svg)](https://david-dm.org/rickycodes/moonmoji) 
-[![devDependency Status](https://david-dm.org/rickycodes/moonmoji/dev-status.svg)](https://david-dm.org/rickycodes/moonmoji#info=devDependencies) 
+[![NPM](https://nodei.co/npm/moonmoji.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/moonmoji/)
+[![NPM](https://nodei.co/npm-dl/moonmoji.png?height=3)](https://nodei.co/npm/moonmoji/)
+
+[![build status](https://api.travis-ci.org/rickycodes/moonmoji.svg?branch=master)](https://travis-ci.org/rickycodes/moonmoji/) 
+[![dependency status](https://david-dm.org/rickycodes/moonmoji.svg)](https://david-dm.org/rickycodes/moonmoji) 
+[![devDependency status](https://david-dm.org/rickycodes/moonmoji/dev-status.svg)](https://david-dm.org/rickycodes/moonmoji#info=devDependencies) 
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/) 
 [![npm-version](https://img.shields.io/npm/v/moonmoji.svg?style=flat)](https://www.npmjs.com/package/moonmoji) 
 [![npm-downloads](https://img.shields.io/npm/dm/moonmoji.svg?style=flat)](https://www.npmjs.com/package/moonmoji)

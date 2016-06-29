@@ -10,6 +10,21 @@ const phases = [
   { emoji: '🌘', code: ':waning_crescent_moon:', name: 'Waning Crescent', weight: 6.3825 }
 ]
 
+const types = {
+  january: 'wolf',
+  february: 'snow',
+  march: 'worm',
+  april: 'pink',
+  may: 'flower',
+  june: 'strawberry',
+  july: 'buck',
+  august: 'sturgeon',
+  september: 'harvest',
+  october: 'hunter',
+  november: 'beaver',
+  december: 'cold'
+}
+
 function stepPhase (phase) {
   const weight = phases.reduce(function (a, b) {
     return a + b.weight
@@ -29,5 +44,9 @@ function stepPhase (phase) {
 module.exports = function (dateObj) {
   dateObj = dateObj || new Date()
   const phase = suncalc.getMoonIllumination(dateObj).phase
-  return phases[stepPhase(phase)]
+  const moonmoji = phases[stepPhase(phase)]
+  if (moonmoji.name === 'Full Moon') {
+    moonmoji.type = types[dateObj.toLocaleString('en-us', { month: 'long' }).toLowerCase()]
+  }
+  return moonmoji
 }

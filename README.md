@@ -3,6 +3,7 @@
 moonmoji
 ========
 [![NPM](https://nodei.co/npm/moonmoji.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/moonmoji/)
+
 [![NPM](https://nodei.co/npm-dl/moonmoji.png?height=3)](https://nodei.co/npm/moonmoji/)
 
 [![build status](https://api.travis-ci.org/rickycodes/moonmoji.svg?branch=master)](https://travis-ci.org/rickycodes/moonmoji/) 

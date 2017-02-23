@@ -25,7 +25,7 @@ const types = {
   december: 'cold'
 }
 
-function stepPhase (phase) {
+const step = function (phase) {
   const weight = phases.reduce(function (a, b) {
     return a + b.weight
   }, 0)
@@ -41,12 +41,12 @@ function stepPhase (phase) {
   return rv
 }
 
-module.exports = function (dateObj) {
-  dateObj = dateObj || new Date()
-  const phase = suncalc.getMoonIllumination(dateObj).phase
-  const moonmoji = phases[stepPhase(phase)]
+module.exports = function (date) {
+  date = date || new Date()
+  const phase = suncalc.getMoonIllumination(date).phase
+  const moonmoji = phases[step(phase)]
   if (moonmoji.name === 'Full Moon') {
-    moonmoji.type = types[dateObj.toLocaleString('en-us', { month: 'long' }).toLowerCase()]
+    moonmoji.type = types[date.toLocaleString('en-us', { month: 'long' }).toLowerCase()]
   }
   return moonmoji
 }

@@ -8,11 +8,14 @@
     "suncalc": "^1.7.0"
   },
   "devDependencies": {
-    "mocha": "^3.0.0",
-    "standard": "^8.0.0"
+    "faucet": "0.0.1",
+    "standard": "^8.0.0",
+    "tape": "^4.6.3"
   },
   "scripts": {
-    "test": "standard && mocha"
+    "lint": "standard -v",
+    "tape": "tape test.js | faucet",
+    "test": "npm run lint && npm run tape"
   },
   "bin": {
     "moonmoji": "cli.js"

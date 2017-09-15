@@ -1,7 +1,7 @@
 ![moonmoji](http://i.imgur.com/BnYRgMF.png)
 
-moonmoji
-========
+# moonmoji
+
 [![NPM](https://nodei.co/npm/moonmoji.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/moonmoji/)
 
 [![NPM](https://nodei.co/npm-dl/moonmoji.png?height=3)](https://nodei.co/npm/moonmoji/)
@@ -19,14 +19,14 @@ moonmoji
 
 Return an emoji representing the current moon phase.
 
-Install
-------------
+## Install
+
 ```sh
 $ npm install --save moonmoji
 ```
 
-Usage
------
+## Usage
+
 ```js
 var moonmoji = require('moonmoji')();
 
@@ -34,8 +34,8 @@ console.log(moonmoji);
 // => { emoji: '🌗', name: 'Last Quarter' }
 ```
 
-CLI
----
+## CLI
+
 ```sh
 $ npm install --global moonmoji
 ```
@@ -62,8 +62,8 @@ $ moonmoji --help
     => 1.1.2
 ```
 
-In your bash
-------------
+## In your bash
+
 The main goal of this was to have the emoji display in a shell. This can be accomplished by adding the script to your `PS1` export in your `.bash_prompt` or similar, eg:
 
 ```sh
@@ -77,10 +77,13 @@ Examples:
 
 * note: If you have additional information in your `PS1` you'll need to have two spaces after the emoji character.
 
-Thanks
-------
+## Thanks
 
 [@lauradegroot](https://github.com/lauradegroot) for inspiration  
 [@bwinton](https://github.com/bwinton) for pretty much authoring the whole thing  
 [@matiassingers](https://github.com/matiassingers) for tests!  
 The whole [meatspace](https://chat.meatspac.es/) community for being awesome.
+
+## Licence
+
+MIT

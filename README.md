@@ -2,6 +2,8 @@
 
 # moonmoji
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/rickycodes/moonmoji.svg)](https://greenkeeper.io/)
+
 [![NPM](https://nodei.co/npm/moonmoji.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/moonmoji/)
 
 [![NPM](https://nodei.co/npm-dl/moonmoji.png?height=3)](https://nodei.co/npm/moonmoji/)

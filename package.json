@@ -4,12 +4,12 @@
   "description": "Return an emoji representing the current moon phase.",
   "main": "index.js",
   "dependencies": {
-    "meow": "^3.7.0",
+    "meow": "^5.0.0",
     "suncalc": "^1.7.0"
   },
   "devDependencies": {
     "faucet": "0.0.1",
-    "standard": "^10.0.2",
+    "standard": "^11.0.1",
     "tape": "^4.6.3"
   },
   "scripts": {

@@ -10,7 +10,7 @@
   "devDependencies": {
     "faucet": "0.0.1",
     "standard": "^14.0.0",
-    "tape": "^4.6.3"
+    "tape": "^5.0.1"
   },
   "scripts": {
     "lint": "standard -v",

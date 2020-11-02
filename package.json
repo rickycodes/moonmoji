@@ -1,6 +1,6 @@
 {
   "name": "moonmoji",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "description": "Return an emoji representing the current moon phase.",
   "main": "bin.js",
   "scripts": {

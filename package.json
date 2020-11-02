@@ -1,24 +1,15 @@
 {
   "name": "moonmoji",
-  "version": "1.1.10",
+  "version": "2.0.0",
   "description": "Return an emoji representing the current moon phase.",
-  "main": "index.js",
-  "dependencies": {
-    "meow": "^6.0.0",
-    "suncalc": "^1.7.0"
-  },
-  "devDependencies": {
-    "faucet": "0.0.1",
-    "standard": "^14.0.0",
-    "tape": "^4.6.3"
-  },
+  "main": "bin.js",
   "scripts": {
-    "lint": "standard -v",
-    "tape": "tape test.js | faucet",
-    "test": "npm run lint && npm run tape"
+    "cargo:build": "cargo build --target=wasm32-unknown-emscripten --release",
+    "mv": "mv ./target/wasm32-unknown-emscripten/release/moonmoji.* .",
+    "build": "yarn cargo:build && yarn mv"
   },
   "bin": {
-    "moonmoji": "cli.js"
+    "moonmoji": "bin.js"
   },
   "repository": {
     "type": "git",
@@ -35,6 +26,5 @@
   "bugs": {
     "url": "https://github.com/rickycodes/moonmoji/issues"
   },
-  "homepage": "https://github.com/rickycodes/moonmoji",
-  "tonicExampleFilename": "example.js"
+  "homepage": "https://github.com/rickycodes/moonmoji"
 }

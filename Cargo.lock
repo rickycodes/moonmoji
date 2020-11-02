@@ -128,9 +128,9 @@ dependencies = [
 
 [[package]]
 name = "timemoji"
-version = "0.1.0"
+version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bc8022cb37f16336d64c4c0b6cbd51b6b6ef39cd74b1f9450325be09ae663cbe"
+checksum = "29e6c59042147831c3341b6a422963e6a24f98a72f85ca7310b07d066aa150a9"
 dependencies = [
  "chrono",
  "rand",
